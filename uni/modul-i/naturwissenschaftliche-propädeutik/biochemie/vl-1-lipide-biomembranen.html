@@ -21,6 +21,7 @@
     <script>
         let gaps = document.querySelectorAll(".gap");
         for (let gap of gaps) {
+            console.log("one");
             gap.addEventListener("click", event => {
                 if (gap.style.visibility == "hidden") gap.style.visibility = "visible";
                 else gap.style.visibility = "hidden";
