@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <title>VL 1: Lipide, Biomembranen</title>
+
+    <style>
+        .gap {
+            visibility: hidden;
+            color: red;
+        }
+    </style>
+    <script>
+        let gaps = document.querySelectorAll(".gap");
+        for (let gap of gaps) {
+            gap.addEventListener("click", event => {
+                if (gap.style.visibility == "hidden") gap.style.visibility = "visible";
+                else gap.style.visibility = "hidden";
+            });
+        }
+    </script>
+</head>
+<body>
+    <p>This is an <span class="gap">example</span> of a hidden thing.</p>
+</body>
+</html>
